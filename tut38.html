@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: white;
+            ;
+            width: 400px;
+            height: 400px;
+            transition:  1s;
+        }
+
+        .child {
+            background-color: black;
+            width: 50%;
+            height: 20%;
+            transition:  1s;
+            color: black;
+        
+        }
+
+        .parent:hover .child {
+            background-color:white;
+            transform: translatex(100%);
+            color:black
+        }
+        .parent:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"><h1>this is text</h1></div>
+    </div>
+
+
+</body>
+
+</html>
