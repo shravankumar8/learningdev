@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person={
+            name:"kunal",
+            age:18,
+            job:"devrel",
+            greet:function(){
+                console.log("this is "+this.name+"okay")        }
+            }
+
+
+            console.log("this guy name is "+person.name);
+            console.log("this guy age  is  "+person.age);
+            console.log("this guy job  is  "+person.job);
+
+            person.job="MLengineer";
+            person.name="kushwaha"
+            console.log("this guy job is "+person.job);
+            console.log("this guy name is "+person.name);
+
+            person.location="london";
+            console.log("this guy lives in "+person.location)
+
+            console.log(typeof person.name);
+            console.log(typeof person.age);
+            console.log(typeof person.greet);
+
+    
+
+Object.freeze(person); // Freeze the person object
+
+person.job = "ML"; // Trying to add a new property
+
+console.log("This guy's job is " + person.job);
+
+
+
+            
+    </script>
+    
+</body>
+</html>
