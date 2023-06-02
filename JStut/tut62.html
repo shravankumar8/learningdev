@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects in java script </title>
+</head>
+<body>
+    <h1>Objects in Java script </h1>
+    <script>
+        const ob1={a:1,b:2,c:3}
+        const ob2={a:4,b:5,c:6}
+        const ob3={a:7,b:8,c:9}
+        const ob4={}
+        Object.assign(ob4,ob1,ob2,ob3);
+        console.log(ob4)
+        const obj5={...ob1,...ob2,...ob3}
+        console.log(obj5)
+
+
+    </script>
+    
+</body>
+</html>
